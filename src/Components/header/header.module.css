@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+}
+.header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header section img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px 10px 0px;
+}
+.header section h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .navegacao ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navegacao ul li {
+  margin-right: 10px;
+  margin-left: 10px;
+  list-style: none;
+}
+.header .navegacao ul li .link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.header div input {
+  border: none;
+  color: #fff;
+  padding: 3px;
+  background-color: transparent;
+}
+.header div input:hover, .header div input:focus {
+  border: none;
+  outline: none;
+}
+.header div input::-moz-placeholder {
+  color: #fff;
+}
+.header div input::placeholder {
+  color: #fff;
+}
+.header div button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header div button img {
+  height: 30px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  header section {
+    margin-bottom: 1rem;
+  }
+  header nav {
+    margin-bottom: 1rem;
+  }
+  header div {
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=header.module.css.map */
