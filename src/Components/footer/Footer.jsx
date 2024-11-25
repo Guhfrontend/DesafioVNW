@@ -2,7 +2,7 @@ import React from 'react'
 import facebook from "../../assets/facebook.png"
 import instagram from "../../assets/instagram.png"
 import linkedin from "../../assets/linkedin.png"
-import twitter from "../../assets/Twitter.png"
+// import twitter from "../../assets/Twitter.png"
 import youtube from "../../assets/youtube.png"
 import s from './Footer.module.scss'
 
@@ -14,7 +14,7 @@ export default function Footer() {
                     <p>4002-8922</p>
                     <nav>
                         <a href=""><img src={facebook} alt="" /></a>
-                        <a href=""><img src={twitter} alt="" /></a>
+                        {/* <a href=""><img src={twitter} alt="" /></a> */}
                         <a href=""><img src={youtube} alt="" /></a>
                         <a href=""><img src={linkedin} alt="" /></a>
                         <a href=""><img src={instagram} alt="" /></a>
