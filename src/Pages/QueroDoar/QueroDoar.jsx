@@ -6,7 +6,7 @@ import s from './QueroDoar.module.scss'
 export default function QueroDoar() {
     return (
         <>
-            <section>
+            <section className={s.queroDoarSection}>
                 <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
                 <form action="">
                     <div>
@@ -17,6 +17,7 @@ export default function QueroDoar() {
                     <input type="text" placeholder='Categoria'/>
                     <input type="text" placeholder='Autor'/>
                     <input type="text" placeholder='Link da imagem'/>
+                    <button type="button">Doar</button>
                 </form>
             </section>
         </>

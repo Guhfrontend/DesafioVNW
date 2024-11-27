@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+
+.queroDoarSection {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        width: 30%;
+        height: 50vh;
+        border: 3px solid #005695;
+        border-radius: 20px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            h2{
+                color: #005695;
+                font-size: 20px;
+            }
+
+        }
+
+        input {
+            border: 2px solid #005695;
+            border-radius: 20px;
+            padding: 10px;
+            width: 50%;
+        }
+
+        button {
+            width: 25%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #005695;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
