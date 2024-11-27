@@ -3,6 +3,9 @@ import logo from "../../assets/2702154 1logo.png"
 import lupa from "../../assets/search.png"
 import s from './Header.module.scss'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import QueroDoar from '../../Pages/QueroDoar/QueroDoar'
+import Doados from '../../Pages/Doados/Doados'
+import Doar from '../../Pages/Doar/Doar'
 
 
 export default function Header() {
@@ -27,9 +30,9 @@ export default function Header() {
           </div>
         </header>
         <Routes>
-          <Route path="/" />
-          <Route path="/doados" />
-          <Route path="/doar" />
+          <Route path="/" element={<QueroDoar />} />
+          <Route path="/doados" element={<Doados />} />
+          <Route path="/doar" element={<Doar />} />
         </Routes>
       </BrowserRouter>
 
