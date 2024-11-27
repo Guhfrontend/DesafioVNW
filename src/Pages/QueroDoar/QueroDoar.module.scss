@@ -49,6 +49,10 @@
             border-radius: 20px;
             padding: 10px;
             width: 50%;
+
+            &::placeholder {
+                color: #000;
+            }
         }
 
         button {
