@@ -53,7 +53,7 @@
         }
     }
 
-    div {
+    .busca {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -109,6 +109,9 @@
 
         div {
             margin-bottom: 1rem;
+        }
+        .busca{
+            display: none;
         }
     }
 

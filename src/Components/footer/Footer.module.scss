@@ -38,4 +38,14 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .contatosFooter {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }

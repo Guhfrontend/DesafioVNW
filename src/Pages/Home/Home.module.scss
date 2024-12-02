@@ -2,7 +2,6 @@
 
 main {
     .principal {
-        width: 100%;
         height: 50vh;
         display: flex;
         align-items: center;
@@ -60,6 +59,43 @@ main {
 
             }
         }
-
     }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        .principal {
+            background-position: center;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .porqueDoar {
+            height: 130%;
+            gap: 10px;
+            margin-bottom: 10px;
+            h2 {
+                font-size: 25px;
+                align-items: center;
+            }
+
+            .card {
+                height: 110%;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+
+                figure {
+                    width: 70%;
+                    img{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+    
 }

@@ -4,8 +4,7 @@ import lupa from "../../assets/search.png"
 import s from './Header.module.scss'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import QueroDoar from '../../Pages/QueroDoar/QueroDoar'
-import Doados from '../../Pages/Doados/Doados'
-import Doar from '../../Pages/Doar/Doar'
+import LivrosDoados from '../../Pages/LivrosDoados/LivrosDoados'
 
 
 export default function Header() {
@@ -24,15 +23,15 @@ export default function Header() {
               <li><Link className={s.link} to="/doar">Quero Doar</Link></li>
             </ul>
           </nav>
-          <div>
+          <div className={s.busca}>
             <input type="text" placeholder='O que você procura?' />
             <button><img src={lupa} alt="lupa" /></button>
           </div>
         </header>
         <Routes>
-          <Route path="/" element={<QueroDoar />} />
-          <Route path="/doados" element={<Doados />} />
-          <Route path="/doar" element={<Doar />} />
+          <Route path="/querodoar" element={<QueroDoar />} />
+          <Route path="/livrosdoados" element={<LivrosDoados />} />
+          <Route path="/querodoar" element={<QueroDoar />} />
         </Routes>
       </BrowserRouter>
 

@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+.livrosDoados {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .conainerCards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        flex-wrap: wrap;
+        transition: all 0.4s ease-in-out;
+
+        .cardLivro {
+            border: solid 3px #005695;
+            border-radius: 10px;
+            padding: 20px;
+
+            .autor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .livrosDoados {
+        transition: all 0.4s ease-in-out;
+
+        .containerCards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            transition: all 0.4s ease-in-out;
+
+            .cardLivro {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+
+}
