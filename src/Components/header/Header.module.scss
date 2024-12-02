@@ -94,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         padding: 1rem;
@@ -103,16 +103,9 @@
             margin-bottom: 1rem;
         }
 
-        nav {
-            margin-bottom: 1rem;
-        }
-
-        div {
-            margin-bottom: 1rem;
-        }
-        .busca{
-            display: none;
-        }
     }
-
+    .busca, input,button {
+        display: none;
+        visibility: hidden;
+    }
 }

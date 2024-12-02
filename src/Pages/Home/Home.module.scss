@@ -78,7 +78,8 @@ main {
             margin-bottom: 10px;
             h2 {
                 font-size: 25px;
-                align-items: center;
+                display: flex;
+                justify-content: center;
             }
 
             .card {

@@ -34,6 +34,5 @@ export default function Header() {
           <Route path="/querodoar" element={<QueroDoar />} />
         </Routes>
       </BrowserRouter>
-
   )
 }
